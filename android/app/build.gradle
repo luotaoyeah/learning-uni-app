@@ -36,6 +36,25 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        applicationVariants.all {
+                // this method is use to rename your release apk only
+            variant ->
+                variant.outputs.each {
+                        // on below line we are setting a name to our apk
+                    output ->
+                        // on below line we are specifying our app name.
+                        project.ext { appName = 'learning-uni-app' }
+                        def timestamp = new Date().format('yyyyMMddHHmmss')
+                        // on below line we are creating a new name for our apk.
+                        def name = output.outputFile.name
+                        // on below line we are replacing our previous name with our app name.
+                        name = name.replace("app-", "$project.ext.appName-")
+                        // on below line we are replacing -release with our formatted date.
+                        name = name.replace("-release", "-" + timestamp)
+                        // at last we are setting our apk name to it.
+                        output.outputFileName = name
+                }
+        }
     }
     aaptOptions {
         additionalParameters '--auto-add-overlay'
