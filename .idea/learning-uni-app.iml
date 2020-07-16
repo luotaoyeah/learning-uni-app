@@ -6,6 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/unpackage" />
+      <excludeFolder url="file://$MODULE_DIR$/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/android/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/android/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/android/app/release" />
+      <excludeFolder url="file://$MODULE_DIR$/android/app/src/main/assets/apps" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

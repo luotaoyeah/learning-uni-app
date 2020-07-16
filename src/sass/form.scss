@@ -1,0 +1,17 @@
+@charset 'utf-8';
+.sin-public-form{
+	padding-bottom: 95rpx;//控制Form底部按钮距离
+	&-content{
+		&-item{
+			$height: 70rpx;
+			display: flex;flex-direction: row;align-items: center;
+			line-height: $height;padding: 10rpx 30rpx;margin-bottom: 1rpx;font-size: 32rpx;color: #666;background-color: #fff;
+			input, picker{width: 380rpx;height: $height;line-height: $height;font-size: 30rpx;color: #333;}
+			.btn{width: 140rpx;height: $height;line-height: $height;border-radius: 12rpx;font-size: 32rpx;color: #fff;text-align: center;background-color: #19be6b;}
+			.label{width: 210rpx;color: #333;}
+			.placeholder{font-size: 30rpx;color: #ccc;}
+		}
+		&-title{height: 75rpx;line-height: 75rpx;padding: 0 30rpx;font-size: 32rpx;color: #666;}
+		&-list{line-height: 55rpx;padding: 5rpx 30rpx;margin-bottom: 1rpx;font-size: 30rpx;color: #333;background-color: #fff;}
+	}
+}

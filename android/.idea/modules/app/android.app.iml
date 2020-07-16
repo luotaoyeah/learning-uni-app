@@ -38,7 +38,8 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../app/src/main/assets/apps/__UNI__130954D" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../app/src/main/assets/apps" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../app/release" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

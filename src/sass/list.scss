@@ -1,0 +1,29 @@
+@charset 'utf-8';
+.sin-public-list{
+	&-content{
+		padding: 10rpx 10rpx 0;
+		$height: 70rpx;
+		&-item{
+			border-radius: 20rpx;margin-bottom: 10rpx;padding: 15rpx 30rpx 10px;font-size: 32rpx;color: #333;background-color: #fff;
+			&-header{
+				justify-content: space-between;
+				line-height: 70rpx;
+				.state{color: $sin-info;}
+				.state.error{color: $sin-error;}
+				.state.success{color: $sin-success;}
+				.state.warning{color: $sin-warning;}
+			}
+			&-footer{
+				justify-content: flex-end;padding-top: 10rpx;
+				.btn{height: 55rpx;line-height: 55rpx;border-radius: 55rpx;padding: 0 40rpx;margin-left: 30rpx;color: #fff;background-color: $sin-info;}
+				.btn.error{background-color: $sin-error;}
+				.btn.success{background-color: $sin-success;}
+				.btn.warning{background-color: $sin-warning;}
+			}
+			&-body{
+				.p{line-height: 45rpx;font-size: 28rpx;color: #666;}
+			}
+			.btn{width: 140rpx;height: $height;line-height: $height;border-radius: 12rpx;font-size: 32rpx;color: #fff;text-align: center;background-color: $sin-warning;}
+		}
+	}
+}

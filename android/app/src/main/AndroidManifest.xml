@@ -2,6 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.simple">
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTING\" />
+
     <application
         android:allowBackup="true"
         android:allowClearUserData="true"
@@ -12,12 +36,12 @@
         <activity
             android:name="io.dcloud.PandoraEntry"
             android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:hardwareAccelerated="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:hardwareAccelerated="true"
-            android:theme="@style/TranslucentTheme"
             android:screenOrientation="user"
-            android:windowSoftInputMode="adjustResize" >
+            android:theme="@style/TranslucentTheme"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,9 +49,9 @@
         </activity>
         <activity
             android:name="io.dcloud.PandoraEntryActivity"
-            android:launchMode="singleTask"
             android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize"
             android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
             android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
             android:screenOrientation="user"
             android:theme="@style/DCloudTheme"
@@ -35,10 +59,12 @@
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <action android:name="android.intent.action.VIEW" />
                 <data android:scheme="h56131bcf" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="dcloud_appkey"
             android:value="92e4b634e1421e18bd1e915f3c1f55bd" />
