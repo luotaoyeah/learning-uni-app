@@ -2,7 +2,7 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{ title }}</text>
+      <uni-tag text='HELLO'></uni-tag>
     </view>
   </view>
 </template>
