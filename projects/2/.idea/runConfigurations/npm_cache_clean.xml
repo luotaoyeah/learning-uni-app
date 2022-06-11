@@ -4,6 +4,7 @@
     <command value="cache" />
     <arguments value="clean -f" />
     <node-interpreter value="project" />
+    <package-manager value="npm" />
     <envs />
     <method v="2" />
   </configuration>
